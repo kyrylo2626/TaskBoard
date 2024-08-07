@@ -1,0 +1,100 @@
+.Dropdown-root {
+    font-size: 20pt;
+    position: relative;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    min-width: 150px;
+
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.Dropdown-control {
+    background-color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.Dropdown-menu {
+    font-size: 20pt;
+    position: absolute;
+    left: 0;
+    top: 150%;
+    width: 100%;
+    max-height: 188px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px #e1e1e6 solid;
+    box-shadow: 0 0 5px gray;
+    overflow-y: auto; 
+    z-index: 1000;
+    outline: none;
+    cursor: pointer;
+}
+
+.Dropdown-placeholder {
+    font-size: 14pt;
+    text-align: center;
+    margin-right: 50px;
+    color: gray;
+}
+
+.Dropdown-control:hover {
+    .Dropdown-placeholder { color: black }
+    .Dropdown-arrow { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') }
+}
+
+.Dropdown-option {
+    padding: 8px 20px;
+    color: black;
+    font-size: 14pt;
+}
+
+.Dropdown-option:hover { background-color: #f0f0f5 }
+.Dropdown-option.is-selected { background-color: #f0f0f5 }
+
+.Dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%) rotate(0);
+    transform-origin: 50% 50%;
+    transition: 0.2s linear transform;
+}
+
+.is-open .Dropdown-arrow { transform: translateY(-50%) rotate(-180deg) }
+
+
+
+
+.Dropdown-menu::-webkit-scrollbar {
+	height: 10px;
+    width: 5px;
+}
+
+.Dropdown-menu::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #5a647d;
+}
+
+.Dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+}
+
+.Dropdown-menu::-webkit-scrollbar-thumb:active {
+    background-color: darkgray;
+}
+
+.Dropdown-menu::-webkit-scrollbar-track {
+	background-color: #dbdbdb;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}

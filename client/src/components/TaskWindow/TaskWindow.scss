@@ -1,0 +1,173 @@
+.taskwindow {
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    z-index: 1000;
+    margin-top: -80%;
+    transition: margin-top 0.2s linear;
+    position: relative;
+}
+
+.tskwheader {
+    height: 8%;
+    background-color: #5a647d;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tskwclose {
+    border: none;
+    background-color: transparent;
+    margin-right: 1%;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.tskwsave {
+    color: black;
+    margin-top: 1%;
+    border: 2px solid #e1e1e6;
+    border-radius: 5px;
+    padding: 5px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tskwsave:hover {
+    border-color: black;
+}
+
+
+.tskwinfo {
+    display: inline-block;
+    height: 92%;
+    width: 61%;
+    background-color: white;
+    padding: 2%;
+    position: relative;
+    overflow: hidden;
+}
+
+.tskwactivity {
+    display: inline-block;
+    height: 92%;
+    width: 31%;
+    background-color: #f0f0f5;
+    padding: 2%;
+}
+
+.infoheader {
+    height: 10%;
+    background-color: white;
+}
+
+.infobutton {
+    height: 70%;
+    width: 20%;
+    border: 2px #e1e1e6 solid;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infobutton:hover {
+    border-color: black;
+}
+
+.taskprops {
+    padding: 2% 0;
+    position: relative;
+    overflow: visible;
+}
+
+.taskprop {
+    padding: 1% 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+}
+
+.propname {
+    color: #5a647d;
+    font-size: 14pt;
+    display: inline-block;
+    width: 15%;
+}
+
+.infotext {
+    height: 44%;
+    width: 100%;
+}
+
+.infoactivity {
+    height: 83%;
+    padding-right: 5%;
+    overflow-y: scroll;
+}
+
+.actinfo {
+    display: inline-block;
+    width: 70%;
+}
+
+.actdate {
+    text-align: right;
+    font-size: 10pt;
+    display: inline-block;
+}
+
+.icon {
+    stroke: #5a647d;
+    font-size: 16pt;
+    margin-right: 10px;
+}
+
+.iconclose {
+    stroke: white;
+    font-size: 16pt;
+}
+
+.iconsave {
+    stroke: black;
+    font-size: 16pt;
+}
+
+.iconclose:hover {
+    stroke: #e1e1e6;
+}
+
+.iconedit {
+    font-size: 14pt;
+    stroke: black;
+}
+
+.nameinput {
+    padding: 10px;
+    border: none;
+    border-bottom: 3px #e1e1e6 solid;
+    outline: none;
+    width: 77%;
+    text-align: center;
+    font-size: 16pt;
+    transition: 0.2s linear border-color;
+}
+
+.textinput {
+    width: calc(100% - 25px);
+    height: 69%;
+    border-radius: 5px;
+    border: 3px #e1e1e6 solid;
+    border-right: none;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    overflow-y: scroll;
+    transition: 0.2s linear border-color;
+}
